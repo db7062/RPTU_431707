@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/bernoulli_nb_extra_trees_preproc_for_classification/42.683.0.0.model",
+    "config_id": "bernoulli_nb_extra_trees_preproc_for_classification_42.683.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'weighting', 'classifier:__choice__': 'bernoulli_nb', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'extra_trees_preproc_for_classification', 'classifier:bernoulli_nb:alpha': 0.05988662238419302, 'classifier:bernoulli_nb:fit_prior': 'True', 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'most_frequent', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'quantile_transformer', 'feature_preprocessor:extra_trees_preproc_for_classification:bootstrap': 'False', 'feature_preprocessor:extra_trees_preproc_for_classification:criterion': 'gini', 'feature_preprocessor:extra_trees_preproc_for_classification:max_depth': 'None', 'feature_preprocessor:extra_trees_preproc_for_classification:max_features': 0.06973815499281523, 'feature_preprocessor:extra_trees_preproc_for_classification:max_leaf_nodes': 'None', 'feature_preprocessor:extra_trees_preproc_for_classification:min_impurity_decrease': 0.0, 'feature_preprocessor:extra_trees_preproc_for_classification:min_samples_leaf': 8, 'feature_preprocessor:extra_trees_preproc_for_classification:min_samples_split': 4, 'feature_preprocessor:extra_trees_preproc_for_classification:min_weight_fraction_leaf': 0.0, 'feature_preprocessor:extra_trees_preproc_for_classification:n_estimators': 100, 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles': 75, 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution': 'normal'},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7272727272727273,
+    "accuracy_difference": 0.006493506493506551,
+    "origFeature_abs_mean_shap": [
+        [
+            "pres",
+            0.07891159808298069
+        ],
+        [
+            "insu",
+            0.05912911204751055
+        ],
+        [
+            "skin",
+            0.058980836019351515
+        ],
+        [
+            "age",
+            0.0587405914928531
+        ],
+        [
+            "pedi",
+            0.05566515241980847
+        ],
+        [
+            "preg",
+            0.05483097065709232
+        ],
+        [
+            "mass",
+            0.05457265151333929
+        ],
+        [
+            "plas",
+            0.05178598229515426
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.020238688538989077
+        ],
+        [
+            "plas",
+            0.007786886475595626
+        ],
+        [
+            "insu",
+            0.004311111262845487
+        ],
+        [
+            "mass",
+            0.0036233484034672424
+        ],
+        [
+            "preg",
+            0.000574614420669571
+        ],
+        [
+            "age",
+            -0.01815758538386063
+        ],
+        [
+            "pedi",
+            -0.02158230993176995
+        ],
+        [
+            "pres",
+            -0.035019044991039354
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "pres",
+            0.07891159808298069
+        ],
+        [
+            "insu",
+            0.05912911204751055
+        ],
+        [
+            "skin",
+            0.058980836019351515
+        ],
+        [
+            "age",
+            0.0587405914928531
+        ],
+        [
+            "pedi",
+            0.05566515241980847
+        ],
+        [
+            "preg",
+            0.05483097065709232
+        ],
+        [
+            "mass",
+            0.05457265151333929
+        ],
+        [
+            "plas",
+            0.05178598229515426
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "pres",
+            0.03945579904149028
+        ],
+        [
+            "insu",
+            0.0295645560237553
+        ],
+        [
+            "skin",
+            0.029490418009675726
+        ],
+        [
+            "age",
+            0.02937029574642662
+        ],
+        [
+            "pedi",
+            0.027832576209904224
+        ],
+        [
+            "preg",
+            0.027415485328546194
+        ],
+        [
+            "mass",
+            0.027286325756669637
+        ],
+        [
+            "plas",
+            0.0258929911475771
+        ]
+    ],
+    "nan_indices": []
+}

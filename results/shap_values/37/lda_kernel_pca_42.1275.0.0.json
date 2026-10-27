@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/lda_kernel_pca/42.1275.0.0.model",
+    "config_id": "lda_kernel_pca_42.1275.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'none', 'classifier:__choice__': 'lda', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'kernel_pca', 'classifier:lda:shrinkage': 'manual', 'classifier:lda:tol': 0.0005331663908817338, 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'most_frequent', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'quantile_transformer', 'feature_preprocessor:kernel_pca:kernel': 'sigmoid', 'feature_preprocessor:kernel_pca:n_components': 212, 'classifier:lda:shrinkage_factor': 0.6865141412299193, 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles': 1229, 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution': 'normal', 'feature_preprocessor:kernel_pca:coef0': -0.16100451741780508},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7272727272727273,
+    "accuracy_difference": 0.006493506493506551,
+    "origFeature_abs_mean_shap": [
+        [
+            "insu",
+            0.051672891584755964
+        ],
+        [
+            "age",
+            0.05155497357498629
+        ],
+        [
+            "pres",
+            0.05018469350915291
+        ],
+        [
+            "mass",
+            0.045256533363172737
+        ],
+        [
+            "preg",
+            0.04489039510065395
+        ],
+        [
+            "skin",
+            0.043824169482840694
+        ],
+        [
+            "pedi",
+            0.04326548141855828
+        ],
+        [
+            "plas",
+            0.04149200508977109
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.012049119973268676
+        ],
+        [
+            "plas",
+            0.002868138835715236
+        ],
+        [
+            "insu",
+            0.0028273251524325548
+        ],
+        [
+            "mass",
+            0.0024532971343854556
+        ],
+        [
+            "preg",
+            -0.0024762241598226655
+        ],
+        [
+            "pedi",
+            -0.004868612029606815
+        ],
+        [
+            "pres",
+            -0.020295557100132353
+        ],
+        [
+            "age",
+            -0.024382601231664632
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "insu",
+            0.051672891584755964
+        ],
+        [
+            "age",
+            0.05155497357498629
+        ],
+        [
+            "pres",
+            0.05018469350915291
+        ],
+        [
+            "mass",
+            0.045256533363172737
+        ],
+        [
+            "preg",
+            0.04489039510065395
+        ],
+        [
+            "skin",
+            0.043824169482840694
+        ],
+        [
+            "pedi",
+            0.04326548141855828
+        ],
+        [
+            "plas",
+            0.04149200508977109
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "insu",
+            0.025836445792377986
+        ],
+        [
+            "age",
+            0.02577748678749316
+        ],
+        [
+            "pres",
+            0.025092346754576455
+        ],
+        [
+            "mass",
+            0.022628266681586403
+        ],
+        [
+            "preg",
+            0.022445197550326982
+        ],
+        [
+            "skin",
+            0.021912084741420354
+        ],
+        [
+            "pedi",
+            0.02163274070927915
+        ],
+        [
+            "plas",
+            0.020746002544885535
+        ]
+    ],
+    "nan_indices": []
+}

@@ -1,0 +1,33 @@
+balancing:strategy categorical {none, weighting} [none]
+classifier:__choice__ categorical {adaboost} [adaboost]
+data_preprocessor:__choice__ categorical {feature_type} [feature_type]
+feature_preprocessor:__choice__ categorical {fast_ica} [fast_ica]
+classifier:adaboost:algorithm categorical {SAMME.R, SAMME} [SAMME.R]
+classifier:adaboost:learning_rate real [0.01, 2.0] [0.1]log
+classifier:adaboost:max_depth integer [1, 10] [1]
+classifier:adaboost:n_estimators integer [50, 500] [50]
+data_preprocessor:feature_type:numerical_transformer:imputation:strategy categorical {mean, median, most_frequent} [mean]
+data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__ categorical {minmax, none, normalize, power_transformer, quantile_transformer, robust_scaler, standardize} [standardize]
+feature_preprocessor:fast_ica:algorithm categorical {parallel, deflation} [parallel]
+feature_preprocessor:fast_ica:fun categorical {logcosh, exp, cube} [logcosh]
+feature_preprocessor:fast_ica:whiten categorical {False, True} [False]
+data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles integer [10, 2000] [1000]
+data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution categorical {normal, uniform} [normal]
+data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max real [0.7, 0.999] [0.75]
+data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min real [0.001, 0.3] [0.25]
+feature_preprocessor:fast_ica:n_components integer [10, 2000] [100]
+
+classifier:adaboost:algorithm | classifier:__choice__ == adaboost
+classifier:adaboost:learning_rate | classifier:__choice__ == adaboost
+classifier:adaboost:max_depth | classifier:__choice__ == adaboost
+classifier:adaboost:n_estimators | classifier:__choice__ == adaboost
+data_preprocessor:feature_type:numerical_transformer:imputation:strategy | data_preprocessor:__choice__ == feature_type
+data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__ | data_preprocessor:__choice__ == feature_type
+feature_preprocessor:fast_ica:algorithm | feature_preprocessor:__choice__ == fast_ica
+feature_preprocessor:fast_ica:fun | feature_preprocessor:__choice__ == fast_ica
+feature_preprocessor:fast_ica:whiten | feature_preprocessor:__choice__ == fast_ica
+data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles | data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__ == quantile_transformer
+data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution | data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__ == quantile_transformer
+data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max | data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__ == robust_scaler
+data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min | data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__ == robust_scaler
+feature_preprocessor:fast_ica:n_components | feature_preprocessor:fast_ica:whiten == True

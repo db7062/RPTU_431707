@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/k_nearest_neighbors_polynomial/42.1577.0.0.model",
+    "config_id": "k_nearest_neighbors_polynomial_42.1577.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'weighting', 'classifier:__choice__': 'k_nearest_neighbors', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'polynomial', 'classifier:k_nearest_neighbors:n_neighbors': 5, 'classifier:k_nearest_neighbors:p': 2, 'classifier:k_nearest_neighbors:weights': 'distance', 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'median', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'quantile_transformer', 'feature_preprocessor:polynomial:degree': 2, 'feature_preprocessor:polynomial:include_bias': 'True', 'feature_preprocessor:polynomial:interaction_only': 'True', 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles': 863, 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution': 'uniform'},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7207792207792207,
+    "accuracy_difference": 0.0,
+    "origFeature_abs_mean_shap": [
+        [
+            "pres",
+            0.088020454470826
+        ],
+        [
+            "age",
+            0.08484042890754367
+        ],
+        [
+            "plas",
+            0.06690357717031405
+        ],
+        [
+            "skin",
+            0.06575250373919514
+        ],
+        [
+            "insu",
+            0.06561323480607245
+        ],
+        [
+            "mass",
+            0.06530742075203455
+        ],
+        [
+            "preg",
+            0.06281208208799267
+        ],
+        [
+            "pedi",
+            0.053296558430701184
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.014412237574255965
+        ],
+        [
+            "plas",
+            0.008732423278453737
+        ],
+        [
+            "mass",
+            0.007999322662430692
+        ],
+        [
+            "insu",
+            0.005873550433744727
+        ],
+        [
+            "preg",
+            -0.0015010600271784245
+        ],
+        [
+            "pedi",
+            -0.008516709607917254
+        ],
+        [
+            "pres",
+            -0.032301711312596904
+        ],
+        [
+            "age",
+            -0.03397402162341907
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "pres",
+            0.088020454470826
+        ],
+        [
+            "age",
+            0.08484042890754367
+        ],
+        [
+            "plas",
+            0.06690357717031405
+        ],
+        [
+            "skin",
+            0.06575250373919514
+        ],
+        [
+            "insu",
+            0.06561323480607245
+        ],
+        [
+            "mass",
+            0.06530742075203455
+        ],
+        [
+            "preg",
+            0.06281208208799267
+        ],
+        [
+            "pedi",
+            0.053296558430701184
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "pres",
+            0.04401022723541303
+        ],
+        [
+            "age",
+            0.04242021445377185
+        ],
+        [
+            "plas",
+            0.033451788585157016
+        ],
+        [
+            "skin",
+            0.03287625186959757
+        ],
+        [
+            "insu",
+            0.032806617403036226
+        ],
+        [
+            "mass",
+            0.03265371037601727
+        ],
+        [
+            "preg",
+            0.03140604104399635
+        ],
+        [
+            "pedi",
+            0.02664827921535062
+        ]
+    ],
+    "nan_indices": []
+}

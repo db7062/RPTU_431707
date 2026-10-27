@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/lda_polynomial/42.626.0.0.model",
+    "config_id": "lda_polynomial_42.626.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'weighting', 'classifier:__choice__': 'lda', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'polynomial', 'classifier:lda:shrinkage': 'manual', 'classifier:lda:tol': 0.00011081038435403916, 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'most_frequent', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'quantile_transformer', 'feature_preprocessor:polynomial:degree': 2, 'feature_preprocessor:polynomial:include_bias': 'True', 'feature_preprocessor:polynomial:interaction_only': 'False', 'classifier:lda:shrinkage_factor': 0.539830055469975, 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles': 1834, 'data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution': 'normal'},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7272727272727273,
+    "accuracy_difference": 0.006493506493506551,
+    "origFeature_abs_mean_shap": [
+        [
+            "skin",
+            0.022630106440864373
+        ],
+        [
+            "pres",
+            0.02156205238306436
+        ],
+        [
+            "age",
+            0.020373289423013103
+        ],
+        [
+            "mass",
+            0.020348507190784418
+        ],
+        [
+            "plas",
+            0.01838839476819092
+        ],
+        [
+            "insu",
+            0.017890490550227674
+        ],
+        [
+            "pedi",
+            0.017208194760054644
+        ],
+        [
+            "preg",
+            0.017122609587762783
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.008501281962365456
+        ],
+        [
+            "mass",
+            0.004303105082485038
+        ],
+        [
+            "plas",
+            0.004043969014583754
+        ],
+        [
+            "insu",
+            0.0014685569088588877
+        ],
+        [
+            "preg",
+            8.181560598533834e-05
+        ],
+        [
+            "pedi",
+            -0.004393338965806855
+        ],
+        [
+            "pres",
+            -0.007445394343267642
+        ],
+        [
+            "age",
+            -0.0077970706334061
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "skin",
+            0.022630106440864373
+        ],
+        [
+            "pres",
+            0.02156205238306436
+        ],
+        [
+            "age",
+            0.020373289423013103
+        ],
+        [
+            "mass",
+            0.020348507190784418
+        ],
+        [
+            "plas",
+            0.01838839476819092
+        ],
+        [
+            "insu",
+            0.017890490550227674
+        ],
+        [
+            "pedi",
+            0.017208194760054644
+        ],
+        [
+            "preg",
+            0.017122609587762783
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "skin",
+            0.011315053220432178
+        ],
+        [
+            "pres",
+            0.01078102619153218
+        ],
+        [
+            "age",
+            0.010186644711506558
+        ],
+        [
+            "mass",
+            0.010174253595392216
+        ],
+        [
+            "plas",
+            0.009194197384095467
+        ],
+        [
+            "insu",
+            0.00894524527511384
+        ],
+        [
+            "pedi",
+            0.008604097380027324
+        ],
+        [
+            "preg",
+            0.00856130479388139
+        ]
+    ],
+    "nan_indices": []
+}

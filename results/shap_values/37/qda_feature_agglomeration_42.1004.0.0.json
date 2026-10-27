@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/qda_feature_agglomeration/42.1004.0.0.model",
+    "config_id": "qda_feature_agglomeration_42.1004.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'none', 'classifier:__choice__': 'qda', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'feature_agglomeration', 'classifier:qda:reg_param': 0.3094038993319158, 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'mean', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'robust_scaler', 'feature_preprocessor:feature_agglomeration:affinity': 'manhattan', 'feature_preprocessor:feature_agglomeration:linkage': 'complete', 'feature_preprocessor:feature_agglomeration:n_clusters': 151, 'feature_preprocessor:feature_agglomeration:pooling_func': 'mean', 'data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max': 0.9176579471926652, 'data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min': 0.27071959942822754},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7272727272727273,
+    "accuracy_difference": 0.006493506493506551,
+    "origFeature_abs_mean_shap": [
+        [
+            "age",
+            0.06900632586671823
+        ],
+        [
+            "mass",
+            0.0494038083964788
+        ],
+        [
+            "skin",
+            0.04580391047731132
+        ],
+        [
+            "insu",
+            0.04504202725797029
+        ],
+        [
+            "preg",
+            0.04005687491190415
+        ],
+        [
+            "pedi",
+            0.039218451136614374
+        ],
+        [
+            "plas",
+            0.03698191456173936
+        ],
+        [
+            "pres",
+            0.03343691606035255
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "mass",
+            0.01067782454588182
+        ],
+        [
+            "skin",
+            0.009523848169177668
+        ],
+        [
+            "insu",
+            0.006918274738513147
+        ],
+        [
+            "pedi",
+            0.0018296196827371663
+        ],
+        [
+            "plas",
+            0.0014715383951149018
+        ],
+        [
+            "preg",
+            -0.002876531055303833
+        ],
+        [
+            "pres",
+            -0.0105642408804872
+        ],
+        [
+            "age",
+            -0.034503162933359095
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "age",
+            0.06900632586671823
+        ],
+        [
+            "mass",
+            0.0494038083964788
+        ],
+        [
+            "skin",
+            0.04580391047731132
+        ],
+        [
+            "insu",
+            0.04504202725797029
+        ],
+        [
+            "preg",
+            0.04005687491190415
+        ],
+        [
+            "pedi",
+            0.039218451136614374
+        ],
+        [
+            "plas",
+            0.03698191456173936
+        ],
+        [
+            "pres",
+            0.03343691606035255
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "age",
+            0.034503162933359095
+        ],
+        [
+            "mass",
+            0.02470190419823941
+        ],
+        [
+            "skin",
+            0.022901955238655663
+        ],
+        [
+            "insu",
+            0.02252101362898514
+        ],
+        [
+            "preg",
+            0.020028437455952074
+        ],
+        [
+            "pedi",
+            0.019609225568307173
+        ],
+        [
+            "plas",
+            0.01849095728086968
+        ],
+        [
+            "pres",
+            0.016718458030176277
+        ]
+    ],
+    "nan_indices": []
+}

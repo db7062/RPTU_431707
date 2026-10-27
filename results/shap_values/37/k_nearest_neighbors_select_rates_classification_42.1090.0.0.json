@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/k_nearest_neighbors_select_rates_classification/42.1090.0.0.model",
+    "config_id": "k_nearest_neighbors_select_rates_classification_42.1090.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'weighting', 'classifier:__choice__': 'k_nearest_neighbors', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'select_rates_classification', 'classifier:k_nearest_neighbors:n_neighbors': 9, 'classifier:k_nearest_neighbors:p': 1, 'classifier:k_nearest_neighbors:weights': 'distance', 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'most_frequent', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'none', 'feature_preprocessor:select_rates_classification:alpha': 0.4700102075830555, 'feature_preprocessor:select_rates_classification:score_func': 'chi2', 'feature_preprocessor:select_rates_classification:mode': 'fpr'},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7142857142857143,
+    "accuracy_difference": 0.00649350649350644,
+    "origFeature_abs_mean_shap": [
+        [
+            "age",
+            0.11119000172669916
+        ],
+        [
+            "pres",
+            0.08583260001259795
+        ],
+        [
+            "skin",
+            0.07525572629263227
+        ],
+        [
+            "insu",
+            0.07377032871866436
+        ],
+        [
+            "preg",
+            0.0656383287296818
+        ],
+        [
+            "mass",
+            0.062137747104266935
+        ],
+        [
+            "pedi",
+            0.060707338753865685
+        ],
+        [
+            "plas",
+            0.05939422134500545
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.029841906802304665
+        ],
+        [
+            "insu",
+            0.018156801128788515
+        ],
+        [
+            "plas",
+            0.015767917782226967
+        ],
+        [
+            "preg",
+            0.008660547562764633
+        ],
+        [
+            "mass",
+            0.00819362310161957
+        ],
+        [
+            "pedi",
+            0.0036426579976565985
+        ],
+        [
+            "pres",
+            -0.028787887205108637
+        ],
+        [
+            "age",
+            -0.05559500086334962
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "age",
+            0.11119000172669916
+        ],
+        [
+            "pres",
+            0.08583260001259795
+        ],
+        [
+            "skin",
+            0.07525572629263227
+        ],
+        [
+            "insu",
+            0.07377032871866436
+        ],
+        [
+            "preg",
+            0.0656383287296818
+        ],
+        [
+            "mass",
+            0.062137747104266935
+        ],
+        [
+            "pedi",
+            0.060707338753865685
+        ],
+        [
+            "plas",
+            0.05939422134500545
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "age",
+            0.05559500086334962
+        ],
+        [
+            "pres",
+            0.04291630000629901
+        ],
+        [
+            "skin",
+            0.037627863146316116
+        ],
+        [
+            "insu",
+            0.036885164359332145
+        ],
+        [
+            "preg",
+            0.0328191643648409
+        ],
+        [
+            "mass",
+            0.031068873552133454
+        ],
+        [
+            "pedi",
+            0.030353669376932835
+        ],
+        [
+            "plas",
+            0.029697110672502722
+        ]
+    ],
+    "nan_indices": []
+}

@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/bernoulli_nb_select_percentile_classification/42.1255.0.0.model",
+    "config_id": "bernoulli_nb_select_percentile_classification_42.1255.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'weighting', 'classifier:__choice__': 'bernoulli_nb', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'select_percentile_classification', 'classifier:bernoulli_nb:alpha': 0.011438752360818297, 'classifier:bernoulli_nb:fit_prior': 'True', 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'most_frequent', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'robust_scaler', 'feature_preprocessor:select_percentile_classification:percentile': 86.59534393455148, 'feature_preprocessor:select_percentile_classification:score_func': 'chi2', 'data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max': 0.9413199255375042, 'data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min': 0.10188993750284213},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7207792207792207,
+    "accuracy_difference": 0.0,
+    "origFeature_abs_mean_shap": [
+        [
+            "pres",
+            0.08493487081824436
+        ],
+        [
+            "pedi",
+            0.07019724533537709
+        ],
+        [
+            "age",
+            0.06659307081651872
+        ],
+        [
+            "insu",
+            0.06612800315572628
+        ],
+        [
+            "preg",
+            0.06407123715152122
+        ],
+        [
+            "skin",
+            0.06198364945192893
+        ],
+        [
+            "mass",
+            0.06164472983498645
+        ],
+        [
+            "plas",
+            0.05765522273568442
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.0179218649342499
+        ],
+        [
+            "mass",
+            0.007182544553343793
+        ],
+        [
+            "plas",
+            0.0020532060296691514
+        ],
+        [
+            "insu",
+            7.320888263906838e-05
+        ],
+        [
+            "preg",
+            -0.005153739785467694
+        ],
+        [
+            "age",
+            -0.01718348609230061
+        ],
+        [
+            "pedi",
+            -0.03142622147742793
+        ],
+        [
+            "pres",
+            -0.03781153153424874
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "pres",
+            0.08493487081824436
+        ],
+        [
+            "pedi",
+            0.07019724533537709
+        ],
+        [
+            "age",
+            0.06659307081651872
+        ],
+        [
+            "insu",
+            0.06612800315572628
+        ],
+        [
+            "preg",
+            0.06407123715152122
+        ],
+        [
+            "skin",
+            0.06198364945192893
+        ],
+        [
+            "mass",
+            0.06164472983498645
+        ],
+        [
+            "plas",
+            0.05765522273568442
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "pres",
+            0.04246743540912219
+        ],
+        [
+            "pedi",
+            0.03509862266768855
+        ],
+        [
+            "age",
+            0.033296535408259366
+        ],
+        [
+            "insu",
+            0.03306400157786318
+        ],
+        [
+            "preg",
+            0.032035618575760566
+        ],
+        [
+            "skin",
+            0.03099182472596442
+        ],
+        [
+            "mass",
+            0.030822364917493236
+        ],
+        [
+            "plas",
+            0.028827611367842204
+        ]
+    ],
+    "nan_indices": []
+}

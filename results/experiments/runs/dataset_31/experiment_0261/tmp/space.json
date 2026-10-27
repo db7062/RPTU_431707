@@ -1,0 +1,260 @@
+{
+  "hyperparameters": [
+    {
+      "name": "balancing:strategy",
+      "type": "categorical",
+      "choices": [
+        "none",
+        "weighting"
+      ],
+      "default": "none",
+      "probabilities": null
+    },
+    {
+      "name": "classifier:__choice__",
+      "type": "categorical",
+      "choices": [
+        "random_forest"
+      ],
+      "default": "random_forest",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:__choice__",
+      "type": "categorical",
+      "choices": [
+        "feature_type"
+      ],
+      "default": "feature_type",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:__choice__",
+      "type": "categorical",
+      "choices": [
+        "no_preprocessing"
+      ],
+      "default": "no_preprocessing",
+      "probabilities": null
+    },
+    {
+      "name": "classifier:random_forest:bootstrap",
+      "type": "categorical",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "default": "True",
+      "probabilities": null
+    },
+    {
+      "name": "classifier:random_forest:criterion",
+      "type": "categorical",
+      "choices": [
+        "gini",
+        "entropy"
+      ],
+      "default": "gini",
+      "probabilities": null
+    },
+    {
+      "name": "classifier:random_forest:max_depth",
+      "type": "constant",
+      "value": "None"
+    },
+    {
+      "name": "classifier:random_forest:max_features",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.0,
+      "upper": 1.0,
+      "default": 0.5
+    },
+    {
+      "name": "classifier:random_forest:max_leaf_nodes",
+      "type": "constant",
+      "value": "None"
+    },
+    {
+      "name": "classifier:random_forest:min_impurity_decrease",
+      "type": "constant",
+      "value": 0.0
+    },
+    {
+      "name": "classifier:random_forest:min_samples_leaf",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 20,
+      "default": 1
+    },
+    {
+      "name": "classifier:random_forest:min_samples_split",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 20,
+      "default": 2
+    },
+    {
+      "name": "classifier:random_forest:min_weight_fraction_leaf",
+      "type": "constant",
+      "value": 0.0
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:imputation:strategy",
+      "type": "categorical",
+      "choices": [
+        "mean",
+        "median",
+        "most_frequent"
+      ],
+      "default": "mean",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "categorical",
+      "choices": [
+        "minmax",
+        "none",
+        "normalize",
+        "power_transformer",
+        "quantile_transformer",
+        "robust_scaler",
+        "standardize"
+      ],
+      "default": "standardize",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 10,
+      "upper": 2000,
+      "default": 1000
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution",
+      "type": "categorical",
+      "choices": [
+        "normal",
+        "uniform"
+      ],
+      "default": "normal",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.7,
+      "upper": 0.999,
+      "default": 0.75
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.001,
+      "upper": 0.3,
+      "default": 0.25
+    }
+  ],
+  "conditions": [
+    {
+      "child": "classifier:random_forest:bootstrap",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:criterion",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:max_depth",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:max_features",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:max_leaf_nodes",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:min_impurity_decrease",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:min_samples_leaf",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:min_samples_split",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "classifier:random_forest:min_weight_fraction_leaf",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "random_forest"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:imputation:strategy",
+      "parent": "data_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_type"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "parent": "data_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_type"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "quantile_transformer"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "quantile_transformer"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "robust_scaler"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "robust_scaler"
+    }
+  ],
+  "forbiddens": [],
+  "python_module_version": "0.4.21",
+  "json_format_version": 0.2
+}

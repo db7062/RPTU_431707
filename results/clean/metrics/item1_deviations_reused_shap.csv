@@ -1,0 +1,9 @@
+aspect,item 1 requires,reused measurement,status
+explainer,"PermutationExplainer or KernelExplainer, same for all",KernelExplainer for all,meets
+output,P(y=1) via predict_proba,"predict_proba, |phi| summed over both classes (= 2|phi_1|, shares identical)",meets
+masker/background,"Independent(B), ~100 train rows, stratified by class","shap.sample(X_train, 100), same rows for all pipelines, NOT stratified",minor deviation
+explanation set,fixed 200-500 held-out rows,"fixed 100 test rows (shap.sample, random_state=42)",deviation
+budget,one max_evals per dataset,nsamples='auto' (2M+2048) per dataset,meets
+features,"raw features end-to-end, categoricals whole","one-hot columns explained separately, then summed (credit-g, Phishing, bank)",deviation
+explainer seed,replicates with controlled seeds (item 4),unseeded KernelExplainer draws,deviation
+feature labels,-,"original code mislabels features when categoricals and numerics interleave; corrected here for [31, 1461]",corrected

@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/gradient_boosting_select_percentile_classification/42.1047.0.0.model",
+    "config_id": "gradient_boosting_select_percentile_classification_42.1047.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'none', 'classifier:__choice__': 'gradient_boosting', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'select_percentile_classification', 'classifier:gradient_boosting:early_stop': 'train', 'classifier:gradient_boosting:l2_regularization': 3.0444043824800658e-09, 'classifier:gradient_boosting:learning_rate': 0.04221349398844351, 'classifier:gradient_boosting:loss': 'auto', 'classifier:gradient_boosting:max_bins': 255, 'classifier:gradient_boosting:max_depth': 'None', 'classifier:gradient_boosting:max_leaf_nodes': 380, 'classifier:gradient_boosting:min_samples_leaf': 4, 'classifier:gradient_boosting:scoring': 'loss', 'classifier:gradient_boosting:tol': 1e-07, 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'most_frequent', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'standardize', 'feature_preprocessor:select_percentile_classification:percentile': 36.990943907932206, 'feature_preprocessor:select_percentile_classification:score_func': 'f_classif', 'classifier:gradient_boosting:n_iter_no_change': 16},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7207792207792207,
+    "accuracy_difference": 0.0,
+    "origFeature_abs_mean_shap": [
+        [
+            "age",
+            0.13122051073014734
+        ],
+        [
+            "pres",
+            0.12743865002253607
+        ],
+        [
+            "insu",
+            0.12400879087984372
+        ],
+        [
+            "skin",
+            0.10945781679716708
+        ],
+        [
+            "preg",
+            0.10920950503641656
+        ],
+        [
+            "plas",
+            0.10395074954051794
+        ],
+        [
+            "mass",
+            0.10355167633874661
+        ],
+        [
+            "pedi",
+            0.09280480259842731
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "insu",
+            0.020857382539056862
+        ],
+        [
+            "skin",
+            0.013665265808394535
+        ],
+        [
+            "preg",
+            0.012276064530506343
+        ],
+        [
+            "plas",
+            0.012251264297006697
+        ],
+        [
+            "mass",
+            -0.001801077344184359
+        ],
+        [
+            "pedi",
+            -0.0024674110577288565
+        ],
+        [
+            "pres",
+            -0.024912984945286373
+        ],
+        [
+            "age",
+            -0.06261425528223649
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "age",
+            0.13122051073014734
+        ],
+        [
+            "pres",
+            0.12743865002253607
+        ],
+        [
+            "insu",
+            0.12400879087984372
+        ],
+        [
+            "skin",
+            0.10945781679716708
+        ],
+        [
+            "preg",
+            0.10920950503641656
+        ],
+        [
+            "plas",
+            0.10395074954051794
+        ],
+        [
+            "mass",
+            0.10355167633874661
+        ],
+        [
+            "pedi",
+            0.09280480259842731
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "age",
+            0.06561025536507366
+        ],
+        [
+            "pres",
+            0.063719325011268
+        ],
+        [
+            "insu",
+            0.062004395439921894
+        ],
+        [
+            "skin",
+            0.054728908398583534
+        ],
+        [
+            "preg",
+            0.05460475251820827
+        ],
+        [
+            "plas",
+            0.051975374770259035
+        ],
+        [
+            "mass",
+            0.05177583816937333
+        ],
+        [
+            "pedi",
+            0.04640240129921362
+        ]
+    ],
+    "nan_indices": []
+}

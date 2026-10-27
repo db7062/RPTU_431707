@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/mlp_pca/42.1084.0.0.model",
+    "config_id": "mlp_pca_42.1084.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'weighting', 'classifier:__choice__': 'mlp', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'pca', 'classifier:mlp:activation': 'tanh', 'classifier:mlp:alpha': 0.003438769057481871, 'classifier:mlp:batch_size': 'auto', 'classifier:mlp:beta_1': 0.9, 'classifier:mlp:beta_2': 0.999, 'classifier:mlp:early_stopping': 'train', 'classifier:mlp:epsilon': 1e-08, 'classifier:mlp:hidden_layer_depth': 3, 'classifier:mlp:learning_rate_init': 0.015293343473127231, 'classifier:mlp:n_iter_no_change': 32, 'classifier:mlp:num_nodes_per_layer': 22, 'classifier:mlp:shuffle': 'True', 'classifier:mlp:solver': 'adam', 'classifier:mlp:tol': 0.0001, 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'mean', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'power_transformer', 'feature_preprocessor:pca:keep_variance': 0.7991903036275947, 'feature_preprocessor:pca:whiten': 'True'},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7142857142857143,
+    "accuracy_difference": 0.00649350649350644,
+    "origFeature_abs_mean_shap": [
+        [
+            "pres",
+            0.09577999915049684
+        ],
+        [
+            "plas",
+            0.09570287622801002
+        ],
+        [
+            "skin",
+            0.0941823521916727
+        ],
+        [
+            "preg",
+            0.09163234766362743
+        ],
+        [
+            "insu",
+            0.0903827498089512
+        ],
+        [
+            "age",
+            0.0901365978319248
+        ],
+        [
+            "mass",
+            0.08788274684564311
+        ],
+        [
+            "pedi",
+            0.08715471884167716
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.022840061400513978
+        ],
+        [
+            "plas",
+            0.011094473919941384
+        ],
+        [
+            "insu",
+            0.0012868510044469258
+        ],
+        [
+            "mass",
+            0.0011223531092817436
+        ],
+        [
+            "preg",
+            5.1501292736522706e-05
+        ],
+        [
+            "pedi",
+            -0.021528035615251948
+        ],
+        [
+            "age",
+            -0.0370210583321867
+        ],
+        [
+            "pres",
+            -0.04232809921664792
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "pres",
+            0.09577999915049684
+        ],
+        [
+            "plas",
+            0.09570287622801002
+        ],
+        [
+            "skin",
+            0.0941823521916727
+        ],
+        [
+            "preg",
+            0.09163234766362743
+        ],
+        [
+            "insu",
+            0.0903827498089512
+        ],
+        [
+            "age",
+            0.0901365978319248
+        ],
+        [
+            "mass",
+            0.08788274684564311
+        ],
+        [
+            "pedi",
+            0.08715471884167716
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "pres",
+            0.04788999957524842
+        ],
+        [
+            "plas",
+            0.047851438114005
+        ],
+        [
+            "skin",
+            0.04709117609583635
+        ],
+        [
+            "preg",
+            0.04581617383181371
+        ],
+        [
+            "insu",
+            0.04519137490447563
+        ],
+        [
+            "age",
+            0.045068298915962375
+        ],
+        [
+            "mass",
+            0.04394137342282154
+        ],
+        [
+            "pedi",
+            0.04357735942083858
+        ]
+    ],
+    "nan_indices": []
+}

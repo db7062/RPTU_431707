@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/sgd_select_percentile_classification/42.241.0.0.model",
+    "config_id": "sgd_select_percentile_classification_42.241.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'none', 'classifier:__choice__': 'sgd', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'select_percentile_classification', 'classifier:sgd:alpha': 3.217559620616458e-05, 'classifier:sgd:average': 'True', 'classifier:sgd:fit_intercept': 'True', 'classifier:sgd:learning_rate': 'constant', 'classifier:sgd:loss': 'squared_hinge', 'classifier:sgd:penalty': 'l2', 'classifier:sgd:tol': 0.029041137759627578, 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'mean', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'power_transformer', 'feature_preprocessor:select_percentile_classification:percentile': 54.498626405958944, 'feature_preprocessor:select_percentile_classification:score_func': 'mutual_info', 'classifier:sgd:eta0': 0.003922607244347073},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7272727272727273,
+    "accuracy_difference": 0.006493506493506551,
+    "origFeature_abs_mean_shap": [
+        [
+            "pres",
+            0.04123258954124249
+        ],
+        [
+            "age",
+            0.04046750920599768
+        ],
+        [
+            "skin",
+            0.030832532038074914
+        ],
+        [
+            "insu",
+            0.030644824738062067
+        ],
+        [
+            "preg",
+            0.02829772222865606
+        ],
+        [
+            "plas",
+            0.02799116986276398
+        ],
+        [
+            "mass",
+            0.02739250226235195
+        ],
+        [
+            "pedi",
+            0.025764775180056296
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.010297361898129078
+        ],
+        [
+            "plas",
+            0.004839488885107602
+        ],
+        [
+            "insu",
+            0.0029386666061532872
+        ],
+        [
+            "mass",
+            0.00042627797726660854
+        ],
+        [
+            "preg",
+            -0.0008640515885193546
+        ],
+        [
+            "pedi",
+            -0.004429292738216371
+        ],
+        [
+            "age",
+            -0.018489642944881823
+        ],
+        [
+            "pres",
+            -0.018674623779803994
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "pres",
+            0.04123258954124249
+        ],
+        [
+            "age",
+            0.04046750920599768
+        ],
+        [
+            "skin",
+            0.030832532038074914
+        ],
+        [
+            "insu",
+            0.030644824738062067
+        ],
+        [
+            "preg",
+            0.02829772222865606
+        ],
+        [
+            "plas",
+            0.02799116986276398
+        ],
+        [
+            "mass",
+            0.02739250226235195
+        ],
+        [
+            "pedi",
+            0.025764775180056296
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "pres",
+            0.02061629477062124
+        ],
+        [
+            "age",
+            0.020233754602998838
+        ],
+        [
+            "skin",
+            0.015416266019037448
+        ],
+        [
+            "insu",
+            0.015322412369031037
+        ],
+        [
+            "preg",
+            0.014148861114328034
+        ],
+        [
+            "plas",
+            0.013995584931381984
+        ],
+        [
+            "mass",
+            0.013696251131175976
+        ],
+        [
+            "pedi",
+            0.012882387590028138
+        ]
+    ],
+    "nan_indices": []
+}

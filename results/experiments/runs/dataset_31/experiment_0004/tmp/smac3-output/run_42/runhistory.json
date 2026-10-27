@@ -1,0 +1,1405 @@
+{
+  "data": [
+    [
+      [
+        1,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.25757575757575757,
+        0.6293268203735352,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895966.533011,
+        1785895967.2691095,
+        {
+          "duration": 0.5961136817932129,
+          "num_run": 2,
+          "train_loss": 0.23694029850746268,
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.3560606060606061,
+        1.0079431533813477,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895967.4012198,
+        1785895968.5202,
+        {
+          "duration": 0.9767389297485352,
+          "num_run": 3,
+          "train_loss": 0.26679104477611937,
+          "configuration_origin": "Initial design"
+        }
+      ]
+    ],
+    [
+      [
+        3,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.28787878787878785,
+        1.208803415298462,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895968.653346,
+        1785895969.9687057,
+        {
+          "duration": 1.1753113269805908,
+          "num_run": 4,
+          "train_loss": 0.12126865671641796,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2727272727272727,
+        8.295448541641235,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895970.4657757,
+        1785895978.8616152,
+        {
+          "duration": 8.26089358329773,
+          "num_run": 5,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.2174990177154541,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1785895979.269865,
+        1785895979.5877717,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/components/feature_preprocessing/fast_ica.py\", line 49, in fit\n    self.preprocessor.fit(X)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 574, in fit\n    self._fit(X, compute_sources=False)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 512, in _fit\n    W, n_iter = _ica_par(X1, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 109, in _ica_par\n    W1 = _sym_decorrelation(np.dot(gwtx, X.T) / p_\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 57, in _sym_decorrelation\n    s, u = linalg.eigh(np.dot(W, W.T))\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/scipy/linalg/decomp.py\", line 445, in eigh\n    a1 = _asarray_validated(a, check_finite=check_finite)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/scipy/_lib/_util.py\", line 293, in _asarray_validated\n    a = toarray(a)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/numpy/lib/function_base.py\", line 603, in asarray_chkfinite\n    raise ValueError(\nValueError: array must not contain infs or NaNs\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1211, in eval_holdout\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/classification.py\", line 123, in fit_transformer\n    X, fit_params = super().fit_transformer(X, y, fit_params=fit_params)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/joblib/memory.py\", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/components/feature_preprocessing/fast_ica.py\", line 52, in fit\n    raise ValueError(\nValueError: Bug in scikit-learn: https://github.com/scikit-learn/scikit-learn/pull/2738\n",
+          "error": "ValueError('Bug in scikit-learn: https://github.com/scikit-learn/scikit-learn/pull/2738')",
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        6,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2954545454545454,
+        4.3844053745269775,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895979.9952347,
+        1785895984.4823632,
+        {
+          "duration": 4.346704483032227,
+          "num_run": 7,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        7,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.31060606060606055,
+        3.505486249923706,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895984.6166613,
+        1785895988.2290418,
+        {
+          "duration": 3.468381881713867,
+          "num_run": 8,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.2215890884399414,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1785895988.6801226,
+        1785895989.006998,
+        {
+          "traceback": "Traceback (most recent call last):\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/components/feature_preprocessing/fast_ica.py\", line 49, in fit\n    self.preprocessor.fit(X)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 574, in fit\n    self._fit(X, compute_sources=False)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 512, in _fit\n    W, n_iter = _ica_par(X1, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 109, in _ica_par\n    W1 = _sym_decorrelation(np.dot(gwtx, X.T) / p_\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/decomposition/_fastica.py\", line 57, in _sym_decorrelation\n    s, u = linalg.eigh(np.dot(W, W.T))\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/scipy/linalg/decomp.py\", line 445, in eigh\n    a1 = _asarray_validated(a, check_finite=check_finite)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/scipy/_lib/_util.py\", line 293, in _asarray_validated\n    a = toarray(a)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/numpy/lib/function_base.py\", line 603, in asarray_chkfinite\n    raise ValueError(\nValueError: array must not contain infs or NaNs\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/__init__.py\", line 55, in fit_predict_try_except_decorator\n    return ta(queue=queue, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/train_evaluator.py\", line 1211, in eval_holdout\n    evaluator.fit_predict_and_loss(iterative=iterative)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/train_evaluator.py\", line 535, in fit_predict_and_loss\n    ) = self._partial_fit_and_predict_standard(\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/train_evaluator.py\", line 900, in _partial_fit_and_predict_standard\n    _fit_and_suppress_warnings(self.logger, model, X, y)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/evaluation/abstract_evaluator.py\", line 188, in _fit_and_suppress_warnings\n    model.fit(X, y)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/base.py\", line 124, in fit\n    X, fit_params = self.fit_transformer(X, y, **fit_params)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/classification.py\", line 123, in fit_transformer\n    X, fit_params = super().fit_transformer(X, y, fit_params=fit_params)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/base.py\", line 136, in fit_transformer\n    Xt = self._fit(X, y, **fit_params_steps)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/pipeline.py\", line 303, in _fit\n    X, fitted_transformer = fit_transform_one_cached(\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/joblib/memory.py\", line 349, in __call__\n    return self.func(*args, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/sklearn/pipeline.py\", line 756, in _fit_transform_one\n    res = transformer.fit(X, y, **fit_params).transform(X)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/components/base.py\", line 473, in fit\n    return self.choice.fit(X, y, **kwargs)\n  File \"/home/dbanerjee/example_for_debjeet/.venv/lib/python3.8/site-packages/autosklearn/pipeline/components/feature_preprocessing/fast_ica.py\", line 52, in fit\n    raise ValueError(\nValueError: Bug in scikit-learn: https://github.com/scikit-learn/scikit-learn/pull/2738\n",
+          "error": "ValueError('Bug in scikit-learn: https://github.com/scikit-learn/scikit-learn/pull/2738')",
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.35984848484848486,
+        2.0257492065429688,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895989.138705,
+        1785895991.2709975,
+        {
+          "duration": 1.9849059581756592,
+          "num_run": 10,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        2.321964979171753,
+        {
+          "__enum__": "StatusType.CRASHED"
+        },
+        1785895991.401744,
+        1785895994.832901,
+        {
+          "error": "Result queue is empty",
+          "exit_status": 5,
+          "subprocess_stdout": "",
+          "subprocess_stderr": "",
+          "exitcode": 1,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        11,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2992424242424242,
+        3.3160698413848877,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895995.3294258,
+        1785895998.750632,
+        {
+          "duration": 3.276895046234131,
+          "num_run": 12,
+          "train_loss": 0.007462686567164201,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.3939393939393939,
+        12.646698236465454,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785895999.3319526,
+        1785896012.078143,
+        {
+          "duration": 12.609883308410645,
+          "num_run": 13,
+          "train_loss": 0.32649253731343286,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        13,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2992424242424242,
+        1.191563606262207,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896012.5947008,
+        1785896013.896671,
+        {
+          "duration": 1.1563546657562256,
+          "num_run": 14,
+          "train_loss": 0.03917910447761197,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        14,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.26515151515151514,
+        1.9730925559997559,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896014.4077883,
+        1785896016.4883726,
+        {
+          "duration": 1.9303498268127441,
+          "num_run": 15,
+          "train_loss": 0.04664179104477617,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        15,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.26136363636363635,
+        0.5452921390533447,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896017.0937097,
+        1785896017.7401,
+        {
+          "duration": 0.5109257698059082,
+          "num_run": 16,
+          "train_loss": 0.052238805970149294,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.25757575757575757,
+        0.6400232315063477,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896018.2484953,
+        1785896018.9893515,
+        {
+          "duration": 0.6073431968688965,
+          "num_run": 17,
+          "train_loss": 0.1548507462686567,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        17,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.29166666666666663,
+        12.234911441802979,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896019.1171088,
+        1785896031.4530926,
+        {
+          "duration": 12.202861785888672,
+          "num_run": 18,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        18,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2992424242424242,
+        2.4925434589385986,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896031.5920043,
+        1785896034.1973622,
+        {
+          "duration": 2.299189567565918,
+          "num_run": 19,
+          "train_loss": 0.10820895522388063,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        19,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.31060606060606055,
+        6.092838287353516,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896034.338848,
+        1785896040.5376053,
+        {
+          "duration": 6.05333137512207,
+          "num_run": 20,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        20,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2765151515151515,
+        1.9463868141174316,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896040.6779377,
+        1785896042.7307694,
+        {
+          "duration": 1.9117212295532227,
+          "num_run": 21,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        21,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.31818181818181823,
+        1.3791441917419434,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896043.5025024,
+        1785896044.9877143,
+        {
+          "duration": 1.3405215740203857,
+          "num_run": 22,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        22,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2727272727272727,
+        3.1545004844665527,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896045.1337888,
+        1785896048.389383,
+        {
+          "duration": 3.11250638961792,
+          "num_run": 23,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        23,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.26136363636363635,
+        1.2694907188415527,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896049.0755167,
+        1785896050.4503224,
+        {
+          "duration": 1.2331597805023193,
+          "num_run": 24,
+          "train_loss": 0.09514925373134331,
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        24,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2689393939393939,
+        0.798424243927002,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896051.1400397,
+        1785896052.0462785,
+        {
+          "duration": 0.7645347118377686,
+          "num_run": 25,
+          "train_loss": 0.21082089552238803,
+          "configuration_origin": "Random Search (sorted)"
+        }
+      ]
+    ],
+    [
+      [
+        25,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.2803030303030303,
+        3.1906464099884033,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896052.7249475,
+        1785896056.0163367,
+        {
+          "duration": 3.154491662979126,
+          "num_run": 26,
+          "train_loss": 0.0,
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        26,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.3257575757575758,
+        1.226731777191162,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896056.6932936,
+        1785896058.024308,
+        {
+          "duration": 1.1955127716064453,
+          "num_run": 27,
+          "train_loss": 0.0,
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        27,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.5454545454545454,
+        1.063797950744629,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896058.169106,
+        1785896059.342921,
+        {
+          "duration": 1.0313713550567627,
+          "num_run": 28,
+          "train_loss": 0.5242537313432836,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        28,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.28787878787878785,
+        0.6310715675354004,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896060.1974185,
+        1785896060.9289622,
+        {
+          "duration": 0.5976061820983887,
+          "num_run": 29,
+          "train_loss": 0.26865671641791045,
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        29,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.3446969696969697,
+        2.246854543685913,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896061.067846,
+        1785896063.4157896,
+        {
+          "duration": 2.2137699127197266,
+          "num_run": 30,
+          "train_loss": 0.0,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        30,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.25,
+        1.9737021923065186,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896064.0562458,
+        1785896066.1322944,
+        {
+          "duration": 1.9387729167938232,
+          "num_run": 31,
+          "train_loss": 0.0,
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        31,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.29166666666666663,
+        0.9963400363922119,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896066.8632207,
+        1785896067.966208,
+        {
+          "duration": 0.9610559940338135,
+          "num_run": 32,
+          "train_loss": 0.23320895522388063,
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        32,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.28787878787878785,
+        1.3800437450408936,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896068.1065333,
+        1785896069.5864904,
+        {
+          "duration": 1.347205400466919,
+          "num_run": 33,
+          "train_loss": 0.08395522388059706,
+          "configuration_origin": "Random Search"
+        }
+      ]
+    ],
+    [
+      [
+        33,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        0.23106060606060608,
+        2.5583693981170654,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        1785896070.285957,
+        1785896072.9498718,
+        {
+          "duration": 2.406088352203369,
+          "num_run": 34,
+          "train_loss": 0.0,
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        34,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0118377208709717,
+        {
+          "__enum__": "StatusType.TIMEOUT"
+        },
+        1785896073.7996552,
+        1785896075.8264618,
+        {
+          "error": "Timeout",
+          "configuration_origin": "Local Search"
+        }
+      ]
+    ],
+    [
+      [
+        35,
+        "{\"task_id\": \"25cd46f6-9073-11f1-bd28-fb1ba8a49f58\"}",
+        0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        {
+          "__enum__": "StatusType.STOP"
+        },
+        1785896076.4508483,
+        1785896076.4508486,
+        {}
+      ]
+    ]
+  ],
+  "config_origins": {
+    "1": "Initial design",
+    "2": "Initial design",
+    "3": "Random Search",
+    "4": "Random Search (sorted)",
+    "5": "Random Search (sorted)",
+    "6": "Random Search (sorted)",
+    "7": "Random Search",
+    "8": "Random Search (sorted)",
+    "9": "Random Search",
+    "10": "Random Search",
+    "11": "Random Search (sorted)",
+    "12": "Random Search (sorted)",
+    "13": "Random Search (sorted)",
+    "14": "Random Search (sorted)",
+    "15": "Random Search (sorted)",
+    "16": "Random Search (sorted)",
+    "17": "Random Search",
+    "18": "Random Search",
+    "19": "Random Search",
+    "20": "Random Search",
+    "21": "Random Search (sorted)",
+    "22": "Random Search",
+    "23": "Local Search",
+    "24": "Random Search (sorted)",
+    "25": "Local Search",
+    "26": "Local Search",
+    "27": "Random Search",
+    "28": "Local Search",
+    "29": "Random Search",
+    "30": "Local Search",
+    "31": "Local Search",
+    "32": "Random Search",
+    "33": "Local Search",
+    "34": "Local Search",
+    "35": "Local Search"
+  },
+  "configs": {
+    "1": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.1,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 50,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "2": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.0285269469336831,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 105,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "normalize",
+      "feature_preprocessor:fast_ica:algorithm": "deflation",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "3": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.8239697761050362,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 194,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "feature_preprocessor:fast_ica:algorithm": "deflation",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "4": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.5242141610885759,
+      "classifier:adaboost:max_depth": 4,
+      "classifier:adaboost:n_estimators": 84,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "deflation",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1686,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal"
+    },
+    "5": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.14123057591386814,
+      "classifier:adaboost:max_depth": 10,
+      "classifier:adaboost:n_estimators": 476,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "none",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "6": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.02310930124814116,
+      "classifier:adaboost:max_depth": 5,
+      "classifier:adaboost:n_estimators": 318,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "deflation",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "feature_preprocessor:fast_ica:n_components": 485
+    },
+    "7": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.597467150146406,
+      "classifier:adaboost:max_depth": 4,
+      "classifier:adaboost:n_estimators": 296,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "exp",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "feature_preprocessor:fast_ica:n_components": 536
+    },
+    "8": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.030335288905914557,
+      "classifier:adaboost:max_depth": 5,
+      "classifier:adaboost:n_estimators": 184,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "none",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "9": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 1.9130238147208902,
+      "classifier:adaboost:max_depth": 8,
+      "classifier:adaboost:n_estimators": 187,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "normalize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "exp",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "feature_preprocessor:fast_ica:n_components": 912
+    },
+    "10": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 1.4454819923154774,
+      "classifier:adaboost:max_depth": 10,
+      "classifier:adaboost:n_estimators": 171,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1179,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal",
+      "feature_preprocessor:fast_ica:n_components": 362
+    },
+    "11": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.32225213792872826,
+      "classifier:adaboost:max_depth": 2,
+      "classifier:adaboost:n_estimators": 460,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "minmax",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "feature_preprocessor:fast_ica:n_components": 1433
+    },
+    "12": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.011697590484168742,
+      "classifier:adaboost:max_depth": 2,
+      "classifier:adaboost:n_estimators": 283,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "deflation",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "13": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.09478749130300926,
+      "classifier:adaboost:max_depth": 2,
+      "classifier:adaboost:n_estimators": 100,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1940,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal",
+      "feature_preprocessor:fast_ica:n_components": 310
+    },
+    "14": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.8987061613568627,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 441,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "15": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.7064299437265253,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 114,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "robust_scaler",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max": 0.9888896642995776,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min": 0.08839096218452559,
+      "feature_preprocessor:fast_ica:n_components": 33
+    },
+    "16": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 1.0242131498976514,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 57,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "17": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.19030956434997698,
+      "classifier:adaboost:max_depth": 9,
+      "classifier:adaboost:n_estimators": 444,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "normalize",
+      "feature_preprocessor:fast_ica:algorithm": "deflation",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "feature_preprocessor:fast_ica:n_components": 1803
+    },
+    "18": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.025904845578786636,
+      "classifier:adaboost:max_depth": 3,
+      "classifier:adaboost:n_estimators": 235,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "normalize",
+      "feature_preprocessor:fast_ica:algorithm": "deflation",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "feature_preprocessor:fast_ica:n_components": 1766
+    },
+    "19": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.15586375937647173,
+      "classifier:adaboost:max_depth": 7,
+      "classifier:adaboost:n_estimators": 401,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "normalize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "20": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.0597515050768317,
+      "classifier:adaboost:max_depth": 3,
+      "classifier:adaboost:n_estimators": 176,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "none",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "feature_preprocessor:fast_ica:n_components": 1951
+    },
+    "21": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 1.106409634810881,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 238,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "power_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "22": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.9983524844091688,
+      "classifier:adaboost:max_depth": 6,
+      "classifier:adaboost:n_estimators": 208,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "normalize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "23": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.8586621296538651,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 208,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1236,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal"
+    },
+    "24": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.4094855394530625,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 57,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 687,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal"
+    },
+    "25": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.9983524844091688,
+      "classifier:adaboost:max_depth": 5,
+      "classifier:adaboost:n_estimators": 227,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "robust_scaler",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max": 0.75,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min": 0.24487072687308772
+    },
+    "26": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 1.0242131498976514,
+      "classifier:adaboost:max_depth": 5,
+      "classifier:adaboost:n_estimators": 50,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "True",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1000,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "uniform",
+      "feature_preprocessor:fast_ica:n_components": 472
+    },
+    "27": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.013729649474956992,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 145,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "robust_scaler",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "exp",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max": 0.8026092528809479,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min": 0.09510415257260416
+    },
+    "28": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.10089400334045533,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 51,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "robust_scaler",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max": 0.7739601345849857,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min": 0.23304908279204173
+    },
+    "29": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.016820501009767726,
+      "classifier:adaboost:max_depth": 9,
+      "classifier:adaboost:n_estimators": 370,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "exp",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "30": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.7529368340137722,
+      "classifier:adaboost:max_depth": 4,
+      "classifier:adaboost:n_estimators": 135,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1000,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal"
+    },
+    "31": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.4094229136187984,
+      "classifier:adaboost:max_depth": 1,
+      "classifier:adaboost:n_estimators": 180,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "robust_scaler",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "exp",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max": 0.803275538005744,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min": 0.023788011566670937
+    },
+    "32": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.0151801065828411,
+      "classifier:adaboost:max_depth": 3,
+      "classifier:adaboost:n_estimators": 140,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "normalize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "exp",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "33": {
+      "balancing:strategy": "weighting",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.7864300717005396,
+      "classifier:adaboost:max_depth": 6,
+      "classifier:adaboost:n_estimators": 134,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "mean",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "standardize",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False"
+    },
+    "34": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME.R",
+      "classifier:adaboost:learning_rate": 0.7971175324600295,
+      "classifier:adaboost:max_depth": 5,
+      "classifier:adaboost:n_estimators": 140,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "most_frequent",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "cube",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1108,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal"
+    },
+    "35": {
+      "balancing:strategy": "none",
+      "classifier:__choice__": "adaboost",
+      "data_preprocessor:__choice__": "feature_type",
+      "feature_preprocessor:__choice__": "fast_ica",
+      "classifier:adaboost:algorithm": "SAMME",
+      "classifier:adaboost:learning_rate": 0.7843233672544921,
+      "classifier:adaboost:max_depth": 6,
+      "classifier:adaboost:n_estimators": 125,
+      "data_preprocessor:feature_type:numerical_transformer:imputation:strategy": "median",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__": "quantile_transformer",
+      "feature_preprocessor:fast_ica:algorithm": "parallel",
+      "feature_preprocessor:fast_ica:fun": "logcosh",
+      "feature_preprocessor:fast_ica:whiten": "False",
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles": 1269,
+      "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution": "normal"
+    }
+  }
+}

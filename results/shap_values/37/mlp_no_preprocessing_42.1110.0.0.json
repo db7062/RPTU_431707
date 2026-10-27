@@ -1,0 +1,146 @@
+{
+    "dataset_id": 37,
+    "configPath": "results/pipeline_models/37/mlp_no_preprocessing/42.1110.0.0.model",
+    "config_id": "mlp_no_preprocessing_42.1110.0.0",
+    "pipeline_configuration": "SimpleClassificationPipeline({'balancing:strategy': 'none', 'classifier:__choice__': 'mlp', 'data_preprocessor:__choice__': 'feature_type', 'feature_preprocessor:__choice__': 'no_preprocessing', 'classifier:mlp:activation': 'relu', 'classifier:mlp:alpha': 2.4909757507553453e-06, 'classifier:mlp:batch_size': 'auto', 'classifier:mlp:beta_1': 0.9, 'classifier:mlp:beta_2': 0.999, 'classifier:mlp:early_stopping': 'train', 'classifier:mlp:epsilon': 1e-08, 'classifier:mlp:hidden_layer_depth': 2, 'classifier:mlp:learning_rate_init': 0.00012163639047316771, 'classifier:mlp:n_iter_no_change': 32, 'classifier:mlp:num_nodes_per_layer': 45, 'classifier:mlp:shuffle': 'True', 'classifier:mlp:solver': 'adam', 'classifier:mlp:tol': 0.0001, 'data_preprocessor:feature_type:numerical_transformer:imputation:strategy': 'mean', 'data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__': 'minmax'},\ndataset_properties={\n  'task': 1,\n  'sparse': False,\n  'multilabel': False,\n  'multiclass': False,\n  'target_type': 'classification',\n  'signed': False})",
+    "baseline_accuracy": 0.7207792207792207,
+    "accuracy": 0.7142857142857143,
+    "accuracy_difference": 0.00649350649350644,
+    "origFeature_abs_mean_shap": [
+        [
+            "age",
+            0.04592098830143179
+        ],
+        [
+            "preg",
+            0.02493552073664082
+        ],
+        [
+            "pres",
+            0.024810049645870514
+        ],
+        [
+            "insu",
+            0.024401027508567586
+        ],
+        [
+            "mass",
+            0.023563860478201127
+        ],
+        [
+            "skin",
+            0.02325135391658573
+        ],
+        [
+            "plas",
+            0.021619726780770655
+        ],
+        [
+            "pedi",
+            0.021409067691478833
+        ]
+    ],
+    "sum_one_class_shap": [
+        [
+            "skin",
+            0.00638522813590219
+        ],
+        [
+            "mass",
+            0.002778142509375008
+        ],
+        [
+            "insu",
+            0.0016133844353667171
+        ],
+        [
+            "plas",
+            0.0013050401843902359
+        ],
+        [
+            "preg",
+            -0.002850367464655873
+        ],
+        [
+            "pedi",
+            -0.0038229882713133306
+        ],
+        [
+            "pres",
+            -0.01045034247089875
+        ],
+        [
+            "age",
+            -0.022960494150715913
+        ]
+    ],
+    "origFeature_abs_mean_shap_subcat": [
+        [
+            "age",
+            0.04592098830143179
+        ],
+        [
+            "preg",
+            0.02493552073664082
+        ],
+        [
+            "pres",
+            0.024810049645870514
+        ],
+        [
+            "insu",
+            0.024401027508567586
+        ],
+        [
+            "mass",
+            0.023563860478201127
+        ],
+        [
+            "skin",
+            0.02325135391658573
+        ],
+        [
+            "plas",
+            0.021619726780770655
+        ],
+        [
+            "pedi",
+            0.021409067691478833
+        ]
+    ],
+    "sum_one_class_shap_subcat": [
+        [
+            "age",
+            0.022960494150715913
+        ],
+        [
+            "preg",
+            0.012467760368320415
+        ],
+        [
+            "pres",
+            0.012405024822935254
+        ],
+        [
+            "insu",
+            0.012200513754283795
+        ],
+        [
+            "mass",
+            0.011781930239100574
+        ],
+        [
+            "skin",
+            0.01162567695829287
+        ],
+        [
+            "plas",
+            0.010809863390385317
+        ],
+        [
+            "pedi",
+            0.010704533845739415
+        ]
+    ],
+    "nan_indices": []
+}

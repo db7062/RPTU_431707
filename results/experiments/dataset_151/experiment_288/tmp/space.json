@@ -1,0 +1,1090 @@
+{
+  "hyperparameters": [
+    {
+      "name": "balancing:strategy",
+      "type": "categorical",
+      "choices": [
+        "none",
+        "weighting"
+      ],
+      "default": "none",
+      "probabilities": null
+    },
+    {
+      "name": "classifier:__choice__",
+      "type": "categorical",
+      "choices": [
+        "adaboost"
+      ],
+      "default": "adaboost",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:__choice__",
+      "type": "categorical",
+      "choices": [
+        "feature_type"
+      ],
+      "default": "feature_type",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:__choice__",
+      "type": "categorical",
+      "choices": [
+        "extra_trees_preproc_for_classification",
+        "fast_ica",
+        "feature_agglomeration",
+        "kernel_pca",
+        "kitchen_sinks",
+        "liblinear_svc_preprocessor",
+        "no_preprocessing",
+        "nystroem_sampler",
+        "pca",
+        "polynomial",
+        "random_trees_embedding",
+        "select_percentile_classification",
+        "select_rates_classification"
+      ],
+      "default": "no_preprocessing",
+      "probabilities": null
+    },
+    {
+      "name": "classifier:adaboost:algorithm",
+      "type": "categorical",
+      "choices": [
+        "SAMME.R",
+        "SAMME"
+      ],
+      "default": "SAMME.R",
+      "probabilities": null
+    },
+    {
+      "name": "classifier:adaboost:learning_rate",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 0.01,
+      "upper": 2.0,
+      "default": 0.1
+    },
+    {
+      "name": "classifier:adaboost:max_depth",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 10,
+      "default": 1
+    },
+    {
+      "name": "classifier:adaboost:n_estimators",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 50,
+      "upper": 500,
+      "default": 50
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:imputation:strategy",
+      "type": "categorical",
+      "choices": [
+        "mean",
+        "median",
+        "most_frequent"
+      ],
+      "default": "mean",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "categorical",
+      "choices": [
+        "minmax",
+        "none",
+        "normalize",
+        "power_transformer",
+        "quantile_transformer",
+        "robust_scaler",
+        "standardize"
+      ],
+      "default": "standardize",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:bootstrap",
+      "type": "categorical",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "default": "False",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:criterion",
+      "type": "categorical",
+      "choices": [
+        "gini",
+        "entropy"
+      ],
+      "default": "gini",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:max_depth",
+      "type": "constant",
+      "value": "None"
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:max_features",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.0,
+      "upper": 1.0,
+      "default": 0.5
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:max_leaf_nodes",
+      "type": "constant",
+      "value": "None"
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:min_impurity_decrease",
+      "type": "constant",
+      "value": 0.0
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:min_samples_leaf",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 20,
+      "default": 1
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:min_samples_split",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 20,
+      "default": 2
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:min_weight_fraction_leaf",
+      "type": "constant",
+      "value": 0.0
+    },
+    {
+      "name": "feature_preprocessor:extra_trees_preproc_for_classification:n_estimators",
+      "type": "constant",
+      "value": 100
+    },
+    {
+      "name": "feature_preprocessor:fast_ica:algorithm",
+      "type": "categorical",
+      "choices": [
+        "parallel",
+        "deflation"
+      ],
+      "default": "parallel",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:fast_ica:fun",
+      "type": "categorical",
+      "choices": [
+        "logcosh",
+        "exp",
+        "cube"
+      ],
+      "default": "logcosh",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:fast_ica:whiten",
+      "type": "categorical",
+      "choices": [
+        "False",
+        "True"
+      ],
+      "default": "False",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:feature_agglomeration:affinity",
+      "type": "categorical",
+      "choices": [
+        "euclidean",
+        "manhattan",
+        "cosine"
+      ],
+      "default": "euclidean",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:feature_agglomeration:linkage",
+      "type": "categorical",
+      "choices": [
+        "ward",
+        "complete",
+        "average"
+      ],
+      "default": "ward",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:feature_agglomeration:n_clusters",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 400,
+      "default": 25
+    },
+    {
+      "name": "feature_preprocessor:feature_agglomeration:pooling_func",
+      "type": "categorical",
+      "choices": [
+        "mean",
+        "median",
+        "max"
+      ],
+      "default": "mean",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:kernel_pca:kernel",
+      "type": "categorical",
+      "choices": [
+        "poly",
+        "rbf",
+        "sigmoid",
+        "cosine"
+      ],
+      "default": "rbf",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:kernel_pca:n_components",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 10,
+      "upper": 2000,
+      "default": 100
+    },
+    {
+      "name": "feature_preprocessor:kitchen_sinks:gamma",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 3.0517578125e-05,
+      "upper": 8.0,
+      "default": 1.0
+    },
+    {
+      "name": "feature_preprocessor:kitchen_sinks:n_components",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 50,
+      "upper": 10000,
+      "default": 100
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:C",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 0.03125,
+      "upper": 32768.0,
+      "default": 1.0
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:dual",
+      "type": "constant",
+      "value": "False"
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:fit_intercept",
+      "type": "constant",
+      "value": "True"
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:intercept_scaling",
+      "type": "constant",
+      "value": 1
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:loss",
+      "type": "categorical",
+      "choices": [
+        "hinge",
+        "squared_hinge"
+      ],
+      "default": "squared_hinge",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:multi_class",
+      "type": "constant",
+      "value": "ovr"
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:penalty",
+      "type": "constant",
+      "value": "l1"
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:tol",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 1e-05,
+      "upper": 0.1,
+      "default": 0.0001
+    },
+    {
+      "name": "feature_preprocessor:nystroem_sampler:kernel",
+      "type": "categorical",
+      "choices": [
+        "poly",
+        "rbf",
+        "sigmoid",
+        "cosine"
+      ],
+      "default": "rbf",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:nystroem_sampler:n_components",
+      "type": "uniform_int",
+      "log": true,
+      "lower": 50,
+      "upper": 10000,
+      "default": 100
+    },
+    {
+      "name": "feature_preprocessor:pca:keep_variance",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.5,
+      "upper": 0.9999,
+      "default": 0.9999
+    },
+    {
+      "name": "feature_preprocessor:pca:whiten",
+      "type": "categorical",
+      "choices": [
+        "False",
+        "True"
+      ],
+      "default": "False",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:polynomial:degree",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 3,
+      "default": 2
+    },
+    {
+      "name": "feature_preprocessor:polynomial:include_bias",
+      "type": "categorical",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "default": "True",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:polynomial:interaction_only",
+      "type": "categorical",
+      "choices": [
+        "False",
+        "True"
+      ],
+      "default": "False",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:random_trees_embedding:bootstrap",
+      "type": "categorical",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "default": "True",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:random_trees_embedding:max_depth",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 10,
+      "default": 5
+    },
+    {
+      "name": "feature_preprocessor:random_trees_embedding:max_leaf_nodes",
+      "type": "constant",
+      "value": "None"
+    },
+    {
+      "name": "feature_preprocessor:random_trees_embedding:min_samples_leaf",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 20,
+      "default": 1
+    },
+    {
+      "name": "feature_preprocessor:random_trees_embedding:min_samples_split",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 20,
+      "default": 2
+    },
+    {
+      "name": "feature_preprocessor:random_trees_embedding:min_weight_fraction_leaf",
+      "type": "constant",
+      "value": 1.0
+    },
+    {
+      "name": "feature_preprocessor:random_trees_embedding:n_estimators",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 10,
+      "upper": 100,
+      "default": 10
+    },
+    {
+      "name": "feature_preprocessor:select_percentile_classification:percentile",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 1.0,
+      "upper": 99.0,
+      "default": 50.0
+    },
+    {
+      "name": "feature_preprocessor:select_percentile_classification:score_func",
+      "type": "categorical",
+      "choices": [
+        "chi2",
+        "f_classif",
+        "mutual_info"
+      ],
+      "default": "chi2",
+      "probabilities": null
+    },
+    {
+      "name": "feature_preprocessor:select_rates_classification:alpha",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.01,
+      "upper": 0.5,
+      "default": 0.1
+    },
+    {
+      "name": "feature_preprocessor:select_rates_classification:score_func",
+      "type": "categorical",
+      "choices": [
+        "chi2",
+        "f_classif",
+        "mutual_info_classif"
+      ],
+      "default": "chi2",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 10,
+      "upper": 2000,
+      "default": 1000
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution",
+      "type": "categorical",
+      "choices": [
+        "normal",
+        "uniform"
+      ],
+      "default": "normal",
+      "probabilities": null
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.7,
+      "upper": 0.999,
+      "default": 0.75
+    },
+    {
+      "name": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.001,
+      "upper": 0.3,
+      "default": 0.25
+    },
+    {
+      "name": "feature_preprocessor:fast_ica:n_components",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 10,
+      "upper": 2000,
+      "default": 100
+    },
+    {
+      "name": "feature_preprocessor:kernel_pca:coef0",
+      "type": "uniform_float",
+      "log": false,
+      "lower": -1.0,
+      "upper": 1.0,
+      "default": 0.0
+    },
+    {
+      "name": "feature_preprocessor:kernel_pca:degree",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 5,
+      "default": 3
+    },
+    {
+      "name": "feature_preprocessor:kernel_pca:gamma",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 3.0517578125e-05,
+      "upper": 8.0,
+      "default": 0.01
+    },
+    {
+      "name": "feature_preprocessor:nystroem_sampler:coef0",
+      "type": "uniform_float",
+      "log": false,
+      "lower": -1.0,
+      "upper": 1.0,
+      "default": 0.0
+    },
+    {
+      "name": "feature_preprocessor:nystroem_sampler:degree",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 5,
+      "default": 3
+    },
+    {
+      "name": "feature_preprocessor:nystroem_sampler:gamma",
+      "type": "uniform_float",
+      "log": true,
+      "lower": 3.0517578125e-05,
+      "upper": 8.0,
+      "default": 0.1
+    },
+    {
+      "name": "feature_preprocessor:select_rates_classification:mode",
+      "type": "categorical",
+      "choices": [
+        "fpr",
+        "fdr",
+        "fwe"
+      ],
+      "default": "fpr",
+      "probabilities": null
+    }
+  ],
+  "conditions": [
+    {
+      "child": "classifier:adaboost:algorithm",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "adaboost"
+    },
+    {
+      "child": "classifier:adaboost:learning_rate",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "adaboost"
+    },
+    {
+      "child": "classifier:adaboost:max_depth",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "adaboost"
+    },
+    {
+      "child": "classifier:adaboost:n_estimators",
+      "parent": "classifier:__choice__",
+      "type": "EQ",
+      "value": "adaboost"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:imputation:strategy",
+      "parent": "data_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_type"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "parent": "data_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_type"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:bootstrap",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:criterion",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:max_depth",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:max_features",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:max_leaf_nodes",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:min_impurity_decrease",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:min_samples_leaf",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:min_samples_split",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:min_weight_fraction_leaf",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:extra_trees_preproc_for_classification:n_estimators",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "extra_trees_preproc_for_classification"
+    },
+    {
+      "child": "feature_preprocessor:fast_ica:algorithm",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "fast_ica"
+    },
+    {
+      "child": "feature_preprocessor:fast_ica:fun",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "fast_ica"
+    },
+    {
+      "child": "feature_preprocessor:fast_ica:whiten",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "fast_ica"
+    },
+    {
+      "child": "feature_preprocessor:feature_agglomeration:affinity",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_agglomeration"
+    },
+    {
+      "child": "feature_preprocessor:feature_agglomeration:linkage",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_agglomeration"
+    },
+    {
+      "child": "feature_preprocessor:feature_agglomeration:n_clusters",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_agglomeration"
+    },
+    {
+      "child": "feature_preprocessor:feature_agglomeration:pooling_func",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "feature_agglomeration"
+    },
+    {
+      "child": "feature_preprocessor:kernel_pca:kernel",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "kernel_pca"
+    },
+    {
+      "child": "feature_preprocessor:kernel_pca:n_components",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "kernel_pca"
+    },
+    {
+      "child": "feature_preprocessor:kitchen_sinks:gamma",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "kitchen_sinks"
+    },
+    {
+      "child": "feature_preprocessor:kitchen_sinks:n_components",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "kitchen_sinks"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:C",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:dual",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:fit_intercept",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:intercept_scaling",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:loss",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:multi_class",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:penalty",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:liblinear_svc_preprocessor:tol",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "liblinear_svc_preprocessor"
+    },
+    {
+      "child": "feature_preprocessor:nystroem_sampler:kernel",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "nystroem_sampler"
+    },
+    {
+      "child": "feature_preprocessor:nystroem_sampler:n_components",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "nystroem_sampler"
+    },
+    {
+      "child": "feature_preprocessor:pca:keep_variance",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "pca"
+    },
+    {
+      "child": "feature_preprocessor:pca:whiten",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "pca"
+    },
+    {
+      "child": "feature_preprocessor:polynomial:degree",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "polynomial"
+    },
+    {
+      "child": "feature_preprocessor:polynomial:include_bias",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "polynomial"
+    },
+    {
+      "child": "feature_preprocessor:polynomial:interaction_only",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "polynomial"
+    },
+    {
+      "child": "feature_preprocessor:random_trees_embedding:bootstrap",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "random_trees_embedding"
+    },
+    {
+      "child": "feature_preprocessor:random_trees_embedding:max_depth",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "random_trees_embedding"
+    },
+    {
+      "child": "feature_preprocessor:random_trees_embedding:max_leaf_nodes",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "random_trees_embedding"
+    },
+    {
+      "child": "feature_preprocessor:random_trees_embedding:min_samples_leaf",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "random_trees_embedding"
+    },
+    {
+      "child": "feature_preprocessor:random_trees_embedding:min_samples_split",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "random_trees_embedding"
+    },
+    {
+      "child": "feature_preprocessor:random_trees_embedding:min_weight_fraction_leaf",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "random_trees_embedding"
+    },
+    {
+      "child": "feature_preprocessor:random_trees_embedding:n_estimators",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "random_trees_embedding"
+    },
+    {
+      "child": "feature_preprocessor:select_percentile_classification:percentile",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "select_percentile_classification"
+    },
+    {
+      "child": "feature_preprocessor:select_percentile_classification:score_func",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "select_percentile_classification"
+    },
+    {
+      "child": "feature_preprocessor:select_rates_classification:alpha",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "select_rates_classification"
+    },
+    {
+      "child": "feature_preprocessor:select_rates_classification:score_func",
+      "parent": "feature_preprocessor:__choice__",
+      "type": "EQ",
+      "value": "select_rates_classification"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:n_quantiles",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "quantile_transformer"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:quantile_transformer:output_distribution",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "quantile_transformer"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_max",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "robust_scaler"
+    },
+    {
+      "child": "data_preprocessor:feature_type:numerical_transformer:rescaling:robust_scaler:q_min",
+      "parent": "data_preprocessor:feature_type:numerical_transformer:rescaling:__choice__",
+      "type": "EQ",
+      "value": "robust_scaler"
+    },
+    {
+      "child": "feature_preprocessor:fast_ica:n_components",
+      "parent": "feature_preprocessor:fast_ica:whiten",
+      "type": "EQ",
+      "value": "True"
+    },
+    {
+      "child": "feature_preprocessor:kernel_pca:coef0",
+      "parent": "feature_preprocessor:kernel_pca:kernel",
+      "type": "IN",
+      "values": [
+        "poly",
+        "sigmoid"
+      ]
+    },
+    {
+      "child": "feature_preprocessor:kernel_pca:degree",
+      "parent": "feature_preprocessor:kernel_pca:kernel",
+      "type": "EQ",
+      "value": "poly"
+    },
+    {
+      "child": "feature_preprocessor:kernel_pca:gamma",
+      "parent": "feature_preprocessor:kernel_pca:kernel",
+      "type": "IN",
+      "values": [
+        "poly",
+        "rbf"
+      ]
+    },
+    {
+      "child": "feature_preprocessor:nystroem_sampler:coef0",
+      "parent": "feature_preprocessor:nystroem_sampler:kernel",
+      "type": "IN",
+      "values": [
+        "poly",
+        "sigmoid"
+      ]
+    },
+    {
+      "child": "feature_preprocessor:nystroem_sampler:degree",
+      "parent": "feature_preprocessor:nystroem_sampler:kernel",
+      "type": "EQ",
+      "value": "poly"
+    },
+    {
+      "child": "feature_preprocessor:nystroem_sampler:gamma",
+      "parent": "feature_preprocessor:nystroem_sampler:kernel",
+      "type": "IN",
+      "values": [
+        "poly",
+        "rbf",
+        "sigmoid"
+      ]
+    },
+    {
+      "child": "feature_preprocessor:select_rates_classification:mode",
+      "parent": "feature_preprocessor:select_rates_classification:score_func",
+      "type": "NEQ",
+      "value": "mutual_info_classif"
+    }
+  ],
+  "forbiddens": [
+    {
+      "name": "feature_preprocessor:feature_agglomeration:affinity",
+      "type": "AND",
+      "clauses": [
+        {
+          "name": "feature_preprocessor:feature_agglomeration:affinity",
+          "type": "IN",
+          "values": [
+            "cosine",
+            "manhattan"
+          ]
+        },
+        {
+          "name": "feature_preprocessor:feature_agglomeration:linkage",
+          "type": "EQUALS",
+          "value": "ward"
+        }
+      ]
+    },
+    {
+      "name": "feature_preprocessor:liblinear_svc_preprocessor:penalty",
+      "type": "AND",
+      "clauses": [
+        {
+          "name": "feature_preprocessor:liblinear_svc_preprocessor:penalty",
+          "type": "EQUALS",
+          "value": "l1"
+        },
+        {
+          "name": "feature_preprocessor:liblinear_svc_preprocessor:loss",
+          "type": "EQUALS",
+          "value": "hinge"
+        }
+      ]
+    },
+    {
+      "name": "classifier:__choice__",
+      "type": "AND",
+      "clauses": [
+        {
+          "name": "classifier:__choice__",
+          "type": "EQUALS",
+          "value": "adaboost"
+        },
+        {
+          "name": "feature_preprocessor:__choice__",
+          "type": "EQUALS",
+          "value": "kernel_pca"
+        }
+      ]
+    },
+    {
+      "name": "classifier:__choice__",
+      "type": "AND",
+      "clauses": [
+        {
+          "name": "classifier:__choice__",
+          "type": "EQUALS",
+          "value": "adaboost"
+        },
+        {
+          "name": "feature_preprocessor:__choice__",
+          "type": "EQUALS",
+          "value": "kitchen_sinks"
+        }
+      ]
+    },
+    {
+      "name": "classifier:__choice__",
+      "type": "AND",
+      "clauses": [
+        {
+          "name": "classifier:__choice__",
+          "type": "EQUALS",
+          "value": "adaboost"
+        },
+        {
+          "name": "feature_preprocessor:__choice__",
+          "type": "EQUALS",
+          "value": "nystroem_sampler"
+        }
+      ]
+    }
+  ],
+  "python_module_version": "0.4.21",
+  "json_format_version": 0.2
+}
